@@ -1,0 +1,47 @@
+body {
+
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+div { display: block; }
+
+#sky {
+	background: #2BA8AD;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	z-index: -1;
+}
+
+.cloudTop, .cloudMiddle, .cloudBottom {
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+.cloudTop { z-index: -2; }
+.cloudMiddle { z-index: -3; }
+.cloudBottom { z-index: -4; }
+
+.cloudSmall {
+	width: 78px;
+	height: 47px;
+	background-image: url('../img/cloudSmall.png');
+}
+.cloudMedium {
+	width: 107px;
+	height: 66px;
+	background-image: url('../img/cloudMedium.png');
+}
+.cloudBig {
+	width: 131px;
+	height: 78px;
+	background-image: url('../img/cloudBig.png');
+}
+
+h1, h2 { color: white; text-shadow: 3px 3px 2px darkgray; margin-bottom: 100px; }

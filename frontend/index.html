@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en" ng-app>
+    <head>
+        <title>epic quotes</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Adrián Caballero Castro">
+        <link href="css/clouds.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/random.js" type="text/javascript"></script>
+        <script src="js/clouds.js" type="text/javascript"></script>
+        <style type="text/css">
+          .shadow {
+            -moz-box-shadow: 0 0 5px #888;
+            -webkit-box-shadow: 0 0 5px #555;
+            box-shadow: 0 0 5px #555;
+          }
+        </style>
+    </head>
+
+    <body>
+        <div id="sky" ng-controller="Random">
+            <div id="quote" style="margin: 100px auto auto auto; padding: 10px; background: white; opacity: 0.75; width: 400px;">
+                <p>{{quote.content}}</p>
+                <p style="text-align:right;"><cite>&nbsp;&nbsp;-- {{quote.author}}</cite></p>
+            </div>
+            <div class="cloud cloudTop cloudSmall"></div>
+            <div class="cloud cloudMiddle cloudMedium"></div>
+            <div class="cloud cloudTop cloudSmall"></div>
+            <div class="cloud cloudBottom cloudBig"></div>
+            <div class="cloud cloudTop cloudBig"></div>
+        </div>
+    </body>
+</html>
