@@ -1,0 +1,15 @@
+#Mave
+
+target/
+
+
+#Eclipe
+
+.classpath
+.project
+.settings/
+
+#Prod parameters
+
+src/main/resources/application-prod.properties
+
