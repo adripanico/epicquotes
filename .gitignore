@@ -1,13 +1,14 @@
 #Mave
-
 target/
 
 
 #Eclipe
-
 .classpath
 .project
 .settings/
+
+#IntelliJ
+.idea/
 
 #Prod parameters
 
